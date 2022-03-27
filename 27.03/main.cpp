@@ -3,18 +3,22 @@
 using namespace std;
 
 int main() {
-	int a, b, c;
+	int a, b, c, d;
 	cout << "Input numbers" << endl;
-	cin >> a >> b >> c;
+	cin >> a >> b >> c >> d;
 
 	int max;
-	if (a > b && a > c) {
+	if (a > b && a > c && a > d) {
 		max = a;
 	}
-	else if (b > c) {
+	
+	 if (b > c && b > d) {
 		max = b;
 
 	}
+	 else if (c > d) {
+		 max = c;
+	 }
 	cout << "max =" << max << endl;
 	return 0;
 }
